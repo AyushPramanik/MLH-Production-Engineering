@@ -220,7 +220,7 @@ def bulk_load_urls():
 
     from app.database import db
     with db.atomic():
-        for batch in _chunks(rows, 100):
+        for batch in _chunks(rows, 500):
             URL.insert_many(batch).on_conflict_ignore().execute()
 
     delete_cache_pattern("urls:list:*")

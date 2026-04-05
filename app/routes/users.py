@@ -215,9 +215,14 @@ def bulk_load_users():
         with open(filepath, newline="") as f:
             rows = list(csv.DictReader(f))
 
+    # Strip 'id' so PostgreSQL uses its own sequence — avoids sequence
+    # conflicts and lets the DB skip the primary-key index for conflict checks.
+    _FIELDS = {"username", "email", "created_at"}
+    clean_rows = [{k: v for k, v in row.items() if k in _FIELDS} for row in rows]
+
     from app.database import db
     with db.atomic():
-        for batch in _chunks(rows, 100):
+        for batch in _chunks(clean_rows, 500):
             User.insert_many(batch).on_conflict_ignore().execute()
 
     delete_cache_pattern("users:list:*")
