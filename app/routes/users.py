@@ -220,6 +220,7 @@ def bulk_load_users():
         for batch in _chunks(rows, 100):
             User.insert_many(batch).on_conflict_ignore().execute()
 
+    delete_cache_pattern("users:list:*")
     return jsonify({"imported": len(rows)}), 201
 
 

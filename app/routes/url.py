@@ -223,6 +223,10 @@ def bulk_load_urls():
         for batch in _chunks(rows, 100):
             URL.insert_many(batch).on_conflict_ignore().execute()
 
+<<<<<<< Updated upstream
+=======
+    delete_cache_pattern("urls:list:*")
+>>>>>>> Stashed changes
     return jsonify({"imported": len(rows)}), 201
 
 
