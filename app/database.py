@@ -17,6 +17,7 @@ def init_db(app):
         port=int(os.environ.get("DATABASE_PORT", 5432)),
         user=os.environ.get("DATABASE_USER", "postgres"),
         password=os.environ.get("DATABASE_PASSWORD", "postgres"),
+        connect_timeout=10,
     )
     db.initialize(database)
 

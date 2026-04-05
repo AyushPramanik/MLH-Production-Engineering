@@ -35,6 +35,14 @@ def is_valid_url(value):
         return False
 
 
+def _fmt_dt(dt):
+    if dt is None:
+        return None
+    if hasattr(dt, "strftime"):
+        return dt.strftime("%Y-%m-%dT%H:%M:%S")
+    return str(dt)
+
+
 def _url_dict(url):
     return {
         "id": url.id,
@@ -43,8 +51,8 @@ def _url_dict(url):
         "original_url": url.original_url,
         "title": url.title,
         "is_active": url.is_active,
-        "created_at": str(url.created_at),
-        "updated_at": str(url.updated_at),
+        "created_at": _fmt_dt(url.created_at),
+        "updated_at": _fmt_dt(url.updated_at),
     }
 
 

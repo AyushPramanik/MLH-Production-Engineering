@@ -1,4 +1,5 @@
 import csv
+import io
 import os
 from datetime import datetime, timezone
 
@@ -15,12 +16,20 @@ _SEED_DIR = os.path.abspath(
 )
 
 
+def _fmt_dt(dt):
+    if dt is None:
+        return None
+    if hasattr(dt, "strftime"):
+        return dt.strftime("%Y-%m-%dT%H:%M:%S")
+    return str(dt)
+
+
 def _user_dict(user):
     return {
         "id": user.id,
         "username": user.username,
         "email": user.email,
-        "created_at": str(user.created_at),
+        "created_at": _fmt_dt(user.created_at),
     }
 
 
@@ -155,24 +164,42 @@ def get_user_urls(user_id):
 
 
 # ---------------------------------------------------------------------------
-# POST /users/bulk  — seed users from a CSV in the seed/ directory
+# POST /users/bulk  — import users from an uploaded CSV file
+#                     (multipart/form-data with 'file' field)
+#                     or from a CSV in the seed/ directory (JSON body {"file": "name.csv"})
 # ---------------------------------------------------------------------------
 
 @users_bp.route("/bulk", methods=["POST"])
 def bulk_load_users():
-    data = request.get_json(force=True, silent=True) or {}
-    filename = data.get("file", "users.csv")
+    # Prefer a real file upload (multipart/form-data)
+    if "file" in request.files:
+        uploaded = request.files["file"]
+        if not uploaded.filename:
+            return jsonify({"error": "no file selected"}), 400
+        if not uploaded.filename.lower().endswith(".csv"):
+            return jsonify({"error": "only CSV files are accepted"}), 400
+        try:
+            content = uploaded.stream.read().decode("utf-8")
+        except UnicodeDecodeError:
+            return jsonify({"error": "file must be UTF-8 encoded"}), 400
+        rows = list(csv.DictReader(io.StringIO(content)))
+    else:
+        # Fall back to seed-directory lookup via JSON body
+        data = request.get_json(force=True, silent=True) or {}
+        filename = data.get("file", "users.csv")
 
-    # Security: only allow simple filenames, no path traversal
-    if os.path.sep in filename or filename.startswith("."):
-        return jsonify({"error": "invalid filename"}), 400
+        # Security: only allow simple filenames, no path traversal
+        if os.path.sep in filename or filename.startswith("."):
+            return jsonify({"error": "invalid filename"}), 400
 
-    filepath = os.path.join(_SEED_DIR, filename)
-    if not os.path.exists(filepath):
-        return jsonify({"error": f"{filename} not found"}), 404
+        filepath = os.path.realpath(os.path.join(_SEED_DIR, filename))
+        if not filepath.startswith(_SEED_DIR + os.sep) and filepath != _SEED_DIR:
+            return jsonify({"error": "invalid filename"}), 400
+        if not os.path.exists(filepath):
+            return jsonify({"error": f"{filename} not found"}), 404
 
-    with open(filepath, newline="") as f:
-        rows = list(csv.DictReader(f))
+        with open(filepath, newline="") as f:
+            rows = list(csv.DictReader(f))
 
     from app.database import db
     with db.atomic():
