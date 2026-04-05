@@ -1,4 +1,5 @@
 import csv
+import io
 import json
 import os
 import random
@@ -165,42 +166,64 @@ def shorten():
 
 
 # ---------------------------------------------------------------------------
-# POST /urls/bulk  — seed URLs from a CSV in the seed/ directory
+# POST /urls/bulk  — import URLs from an uploaded CSV file
+#                    (multipart/form-data with 'file' field)
+#                    or from a CSV in the seed/ directory (JSON body {"file": "name.csv"})
 # ---------------------------------------------------------------------------
 
 @url_bp.route("/urls/bulk", methods=["POST"])
 def bulk_load_urls():
-    data = request.get_json(force=True, silent=True) or {}
-    filename = data.get("file", "urls.csv")
+    # Prefer a real file upload (multipart/form-data)
+    if "file" in request.files:
+        uploaded = request.files["file"]
+        if not uploaded.filename:
+            return jsonify({"error": "no file selected"}), 400
+        if not uploaded.filename.lower().endswith(".csv"):
+            return jsonify({"error": "only CSV files are accepted"}), 400
+        try:
+            content = uploaded.stream.read().decode("utf-8")
+        except UnicodeDecodeError:
+            return jsonify({"error": "file must be UTF-8 encoded"}), 400
+        raw_rows = list(csv.DictReader(io.StringIO(content)))
+    else:
+        # Fall back to seed-directory lookup via JSON body
+        data = request.get_json(force=True, silent=True) or {}
 
-    if os.path.sep in filename or filename.startswith("."):
-        return jsonify({"error": "invalid filename"}), 400
+        # Security: strip directory components, then resolve and confirm the
+        # resulting path is inside the seed directory (prevents path traversal).
+        filename = os.path.basename(data.get("file", "urls.csv"))
+        if not filename or not filename.lower().endswith(".csv"):
+            return jsonify({"error": "invalid filename"}), 400
 
-    filepath = os.path.join(_SEED_DIR, filename)
-    if not os.path.exists(filepath):
-        return jsonify({"error": f"{filename} not found"}), 404
+        filepath = os.path.realpath(os.path.join(_SEED_DIR, filename))
+        if not filepath.startswith(os.path.realpath(_SEED_DIR) + os.sep):
+            return jsonify({"error": "invalid filename"}), 400
+        if not os.path.exists(filepath):
+            return jsonify({"error": f"{filename} not found"}), 404
 
-    with open(filepath, newline="") as f:
-        rows = [
-            {
-                "id": r["id"],
-                "user_id": r["user_id"],
-                "short_code": r["short_code"],
-                "original_url": r["original_url"],
-                "title": r["title"],
-                "is_active": r["is_active"].lower() == "true",
-                "created_at": r["created_at"],
-                "updated_at": r["updated_at"],
-            }
-            for r in csv.DictReader(f)
-        ]
+        with open(filepath, newline="") as f:
+            raw_rows = list(csv.DictReader(f))
+
+    rows = [
+        {
+            "id": r["id"],
+            "user_id": r.get("user_id") or None,
+            "short_code": r["short_code"],
+            "original_url": r["original_url"],
+            "title": r.get("title") or None,
+            "is_active": r.get("is_active", "true").strip().lower() == "true",
+            "created_at": r.get("created_at"),
+            "updated_at": r.get("updated_at"),
+        }
+        for r in raw_rows
+    ]
 
     from app.database import db
     with db.atomic():
         for batch in _chunks(rows, 100):
             URL.insert_many(batch).on_conflict_ignore().execute()
 
-    return jsonify({"loaded": len(rows)}), 201
+    return jsonify({"imported": len(rows)}), 201
 
 
 # ---------------------------------------------------------------------------

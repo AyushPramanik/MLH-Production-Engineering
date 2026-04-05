@@ -17,13 +17,13 @@ def init_db(app):
         port=int(os.environ.get("DATABASE_PORT", 5432)),
         user=os.environ.get("DATABASE_USER", "postgres"),
         password=os.environ.get("DATABASE_PASSWORD", "postgres"),
-        connect_timeout=10,
+        connect_timeout=3,
     )
     db.initialize(database)
 
     from flask import request as _req
 
-    _NO_DB_ROUTES = {"/metrics", "/logs", "/prometheus", "/dashboard", "/alert-status"}
+    _NO_DB_ROUTES = {"/health", "/metrics", "/logs", "/prometheus", "/dashboard", "/alert-status"}
 
     @app.before_request
     def _db_connect():

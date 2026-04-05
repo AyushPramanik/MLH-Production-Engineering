@@ -43,6 +43,7 @@ def test_db_failure_returns_json_500():
     """Simulate a DB crash — must return JSON 500, not an HTML traceback.
     Uses PROPAGATE_EXCEPTIONS=False so Flask routes the error through our handler
     (TESTING=True would otherwise re-raise it directly to the test).
+    /health is intentionally excluded from DB connections so we use /urls instead.
     """
     from peewee import OperationalError
 
@@ -52,7 +53,7 @@ def test_db_failure_returns_json_500():
 
     with app.test_client() as c:
         with patch("peewee.PostgresqlDatabase.connect", side_effect=OperationalError("connection refused")):
-            response = c.get("/health")
+            response = c.get("/urls")
 
     assert response.status_code == 500
     assert response.is_json
