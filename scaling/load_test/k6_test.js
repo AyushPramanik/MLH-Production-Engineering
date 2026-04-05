@@ -7,6 +7,6 @@ export let options = {
 };
 
 export default function () {
-  http.get('http://localhost:8080/health');
+  http.get('http://localhost:5001/health');
   sleep(1);
 }
