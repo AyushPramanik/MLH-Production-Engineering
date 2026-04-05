@@ -1,4 +1,5 @@
 import csv
+import io
 import os
 from datetime import datetime, timezone
 
@@ -15,12 +16,33 @@ _SEED_DIR = os.path.abspath(
 )
 
 
+def _fmt_dt(dt):
+    if dt is None:
+        return None
+    if hasattr(dt, "strftime"):
+        return dt.strftime("%Y-%m-%dT%H:%M:%S")
+    return str(dt)
+
+
 def _user_dict(user):
     return {
         "id": user.id,
         "username": user.username,
         "email": user.email,
-        "created_at": str(user.created_at),
+        "created_at": _fmt_dt(user.created_at),
+    }
+
+
+def _url_dict(url):
+    return {
+        "id": url.id,
+        "user_id": url.user_id,
+        "short_code": url.short_code,
+        "original_url": url.original_url,
+        "title": url.title,
+        "is_active": url.is_active,
+        "created_at": _fmt_dt(url.created_at),
+        "updated_at": _fmt_dt(url.updated_at),
     }
 
 
@@ -43,7 +65,7 @@ def list_users():
     if page is not None and per_page is not None:
         query = query.paginate(page, per_page)
 
-    result = list(query.dicts())
+    result = [_user_dict(u) for u in query]
     set_cache(cache_key, result)
     return jsonify(result)
 
@@ -151,34 +173,54 @@ def get_user_urls(user_id):
         user = User.get_by_id(user_id)
     except User.DoesNotExist:
         return jsonify({"error": "user not found"}), 404
-    return jsonify(list(user.urls.dicts()))
+    return jsonify([_url_dict(u) for u in user.urls])
 
 
 # ---------------------------------------------------------------------------
-# POST /users/bulk  — seed users from a CSV in the seed/ directory
+# POST /users/bulk  — import users from an uploaded CSV file
+#                     (multipart/form-data with 'file' field)
+#                     or from a CSV in the seed/ directory (JSON body {"file": "name.csv"})
 # ---------------------------------------------------------------------------
 
 @users_bp.route("/bulk", methods=["POST"])
 def bulk_load_users():
-    data = request.get_json(force=True, silent=True) or {}
-    filename = data.get("file", "users.csv")
+    # Prefer a real file upload (multipart/form-data)
+    if "file" in request.files:
+        uploaded = request.files["file"]
+        if not uploaded.filename:
+            return jsonify({"error": "no file selected"}), 400
+        if not uploaded.filename.lower().endswith(".csv"):
+            return jsonify({"error": "only CSV files are accepted"}), 400
+        try:
+            content = uploaded.stream.read().decode("utf-8")
+        except UnicodeDecodeError:
+            return jsonify({"error": "file must be UTF-8 encoded"}), 400
+        rows = list(csv.DictReader(io.StringIO(content)))
+    else:
+        # Fall back to seed-directory lookup via JSON body
+        data = request.get_json(force=True, silent=True) or {}
 
-    # Security: only allow simple filenames, no path traversal
-    if os.path.sep in filename or filename.startswith("."):
-        return jsonify({"error": "invalid filename"}), 400
+        # Security: strip directory components, then resolve and confirm the
+        # resulting path is inside the seed directory (prevents path traversal).
+        filename = os.path.basename(data.get("file", "users.csv"))
+        if not filename or not filename.lower().endswith(".csv"):
+            return jsonify({"error": "invalid filename"}), 400
 
-    filepath = os.path.join(_SEED_DIR, filename)
-    if not os.path.exists(filepath):
-        return jsonify({"error": f"{filename} not found"}), 404
+        filepath = os.path.realpath(os.path.join(_SEED_DIR, filename))
+        if not filepath.startswith(os.path.realpath(_SEED_DIR) + os.sep):
+            return jsonify({"error": "invalid filename"}), 400
+        if not os.path.exists(filepath):
+            return jsonify({"error": f"{filename} not found"}), 404
 
-    with open(filepath, newline="") as f:
-        rows = list(csv.DictReader(f))
+        with open(filepath, newline="") as f:
+            rows = list(csv.DictReader(f))
 
     from app.database import db
     with db.atomic():
         for batch in _chunks(rows, 100):
             User.insert_many(batch).on_conflict_ignore().execute()
 
+    delete_cache_pattern("users:list:*")
     return jsonify({"imported": len(rows)}), 201
 
 
