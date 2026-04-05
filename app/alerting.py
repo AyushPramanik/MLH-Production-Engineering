@@ -1,27 +1,4 @@
-"""
-Alert manager: evaluates alert rules on a background thread and sends
-email and Discord notifications when thresholds are breached.
 
-Supported alerts
-----------------
-service_down    — DB unreachable for one full check cycle
-high_error_rate — >ALERT_ERROR_RATE_THRESHOLD of requests are 5xx
-                  (requires at least ALERT_MIN_REQUESTS in the window)
-
-Configuration (env vars)
-------------------------
-SMTP_HOST                   default: smtp.gmail.com
-SMTP_PORT                   default: 587
-SMTP_USER                   Gmail / SMTP username  (required to send)
-SMTP_PASSWORD               Gmail app-password     (required to send)
-ALERT_EMAIL_FROM            defaults to SMTP_USER
-ALERT_EMAIL_TO              recipient address      (required to send)
-DISCORD_WEBHOOK_URL         Discord webhook URL    (required for Discord)
-ALERT_CHECK_INTERVAL        seconds between checks, default 30
-ALERT_COOLDOWN_SECONDS      min seconds between repeat alerts, default 300
-ALERT_ERROR_RATE_THRESHOLD  0.0-1.0, default 0.10 (10%)
-ALERT_MIN_REQUESTS          min requests in window before error-rate fires, default 5
-"""
 
 import json
 import logging

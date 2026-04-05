@@ -191,3 +191,989 @@
 {"timestamp": "2026-04-04T20:30:06.266033+00:00", "level": "WARNING", "logger": "app.alerting", "message": "alert_email_skipped", "reason": "SMTP_USER or ALERT_EMAIL_TO not set"}
 {"timestamp": "2026-04-04T20:30:07.580296+00:00", "level": "INFO", "logger": "app.alerting", "message": "discord_alert_sent", "subject": "[TEST] Alert Fired"}
 {"timestamp": "2026-04-04T20:30:07.580951+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /test-alert status=200 duration=1315.32ms"}
+{"timestamp": "2026-04-04T21:50:40.891745+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /dashboard"}
+{"timestamp": "2026-04-04T21:50:41.018237+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /dashboard status=404 duration=126.81ms"}
+{"timestamp": "2026-04-04T21:51:13.340967+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-04T21:51:13.421316+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-04T21:51:14.677623+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-04T21:51:14.969321+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-04T21:51:15.147989+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-04T21:51:26.943112+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /dashboard"}
+{"timestamp": "2026-04-04T21:51:26.996576+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /dashboard status=404 duration=53.47ms"}
+{"timestamp": "2026-04-04T21:51:30.635507+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /dashboard"}
+{"timestamp": "2026-04-04T21:51:30.651624+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /dashboard status=404 duration=16.08ms"}
+{"timestamp": "2026-04-04T21:51:31.425709+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /dashboard"}
+{"timestamp": "2026-04-04T21:51:31.432353+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /dashboard status=404 duration=6.53ms"}
+{"timestamp": "2026-04-04T21:51:32.323485+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /dashboard"}
+{"timestamp": "2026-04-04T21:51:32.332513+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /dashboard status=404 duration=9.03ms"}
+{"timestamp": "2026-04-04T21:51:37.699974+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /dashboard"}
+{"timestamp": "2026-04-04T21:51:37.711912+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /dashboard status=404 duration=11.96ms"}
+{"timestamp": "2026-04-04T21:51:44.438015+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /"}
+{"timestamp": "2026-04-04T21:51:44.443280+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET / status=404 duration=5.28ms"}
+{"timestamp": "2026-04-04T21:51:59.217307+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /test-alert"}
+{"timestamp": "2026-04-04T21:51:59.221201+00:00", "level": "WARNING", "logger": "app.alerting", "message": "alert_email_skipped", "reason": "SMTP_USER or ALERT_EMAIL_TO not set"}
+{"timestamp": "2026-04-04T21:52:10.671905+00:00", "level": "ERROR", "logger": "app.alerting", "message": "discord_alert_failed", "error": "URL error: [Errno 11001] getaddrinfo failed"}
+{"timestamp": "2026-04-04T21:52:10.693573+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /test-alert status=200 duration=11476.3ms"}
+{"timestamp": "2026-04-04T21:54:36.413292+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-04T21:54:36.618333+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-04T21:54:43.985577+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-04T21:54:43.995717+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /test-alert"}
+{"timestamp": "2026-04-04T21:54:44.003708+00:00", "level": "WARNING", "logger": "app.alerting", "message": "alert_email_skipped", "reason": "SMTP_USER or ALERT_EMAIL_TO not set"}
+{"timestamp": "2026-04-04T21:54:44.196619+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-04T21:54:44.265898+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-04T21:54:48.814392+00:00", "level": "INFO", "logger": "app.alerting", "message": "discord_alert_sent", "subject": "[TEST] Alert Fired"}
+{"timestamp": "2026-04-04T21:54:48.817379+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /test-alert status=200 duration=4821.63ms"}
+{"timestamp": "2026-04-05T10:29:04.867210+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T10:29:04.965968+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T10:29:06.667192+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T10:29:06.752012+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T10:29:06.787888+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T10:30:33.188393+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T10:30:33.417692+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T10:30:35.006564+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T10:30:35.067700+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T10:30:35.104141+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T10:30:58.458867+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T10:30:58.526970+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T10:30:58.568923+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T10:36:53.838225+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T10:36:53.947176+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T10:36:55.451863+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T10:36:55.820473+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T10:36:55.856024+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T10:37:01.349802+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /trigger-error"}
+{"timestamp": "2026-04-05T10:42:06.210943+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T10:42:06.325324+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T10:42:07.440708+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T10:42:07.728366+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T10:42:07.762746+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T10:42:11.254652+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /test-alert"}
+{"timestamp": "2026-04-05T10:42:11.255184+00:00", "level": "WARNING", "logger": "app.alerting", "message": "alert_email_skipped", "reason": "SMTP_USER or ALERT_EMAIL_TO not set"}
+{"timestamp": "2026-04-05T10:42:15.297578+00:00", "level": "INFO", "logger": "app.alerting", "message": "discord_alert_sent", "subject": "[TEST] Alert Fired"}
+{"timestamp": "2026-04-05T10:42:15.300667+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /test-alert status=200 duration=4045.58ms"}
+{"timestamp": "2026-04-05T10:42:16.984088+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /favicon.ico"}
+{"timestamp": "2026-04-05T10:42:17.020909+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /favicon.ico status=404 duration=36.81ms"}
+{"timestamp": "2026-04-05T10:42:53.117603+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /trigger-error"}
+{"timestamp": "2026-04-05T10:44:08.895976+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T10:44:08.981696+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T10:44:09.020131+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T10:44:32.423159+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T10:44:32.514170+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T10:44:32.553790+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T10:45:59.053632+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /trigger-error"}
+{"timestamp": "2026-04-05T10:49:25.309575+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T10:49:25.387879+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T10:49:25.425844+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T10:49:56.997910+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T10:49:57.080074+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T10:49:57.129463+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T10:51:33.693637+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T10:51:33.863903+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T10:51:35.130958+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T10:51:35.223331+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T10:51:35.259271+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T10:51:39.132540+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /trigger-alert-now"}
+{"timestamp": "2026-04-05T10:51:39.134054+00:00", "level": "ERROR", "logger": "app", "message": "manual_alert_failed", "exception": "Traceback (most recent call last):\n  File \"C:\\Users\\xint2\\mlh-pde\\app\\__init__.py\", line 134, in trigger_alert_now\n    f\"Path: {request.path}\\nMethod: {request.method}\\nTime: {_now()}\\n\"\n                                                             ^^^^\nNameError: name '_now' is not defined"}
+{"timestamp": "2026-04-05T10:51:39.148209+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /trigger-alert-now status=500 duration=15.66ms"}
+{"timestamp": "2026-04-05T10:52:11.437091+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /trigger-alert-now"}
+{"timestamp": "2026-04-05T10:52:11.437560+00:00", "level": "ERROR", "logger": "app", "message": "manual_alert_failed", "exception": "Traceback (most recent call last):\n  File \"C:\\Users\\xint2\\mlh-pde\\app\\__init__.py\", line 134, in trigger_alert_now\n    f\"Path: {request.path}\\nMethod: {request.method}\\nTime: {_now()}\\n\"\n                                                             ^^^^\nNameError: name '_now' is not defined"}
+{"timestamp": "2026-04-05T10:52:11.439683+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /trigger-alert-now status=500 duration=2.58ms"}
+{"timestamp": "2026-04-05T10:53:33.898655+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T10:53:34.052029+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T10:53:34.098576+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T10:54:39.300344+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T10:54:39.400672+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T10:54:39.458459+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T10:55:09.127234+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T10:55:09.186976+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T10:55:10.161490+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T10:55:10.235476+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T10:55:10.272131+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T10:55:30.347037+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /trigger-alert-now"}
+{"timestamp": "2026-04-05T10:55:30.347809+00:00", "level": "WARNING", "logger": "app.alerting", "message": "alert_email_skipped", "reason": "SMTP_USER or ALERT_EMAIL_TO not set"}
+{"timestamp": "2026-04-05T10:55:31.568737+00:00", "level": "INFO", "logger": "app.alerting", "message": "discord_alert_sent", "subject": "[TEST] Intentional Alert"}
+{"timestamp": "2026-04-05T10:55:31.618514+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /trigger-alert-now status=500 duration=1271.43ms"}
+{"timestamp": "2026-04-05T11:05:50.886584+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T11:05:51.090134+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T11:05:51.137411+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T11:10:05.076696+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T11:10:05.144320+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T11:10:05.187864+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T11:10:26.552972+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T11:10:26.637779+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T11:10:27.917721+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T11:10:28.051053+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T11:10:28.096336+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T11:10:41.842963+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /dashboard"}
+{"timestamp": "2026-04-05T11:10:41.885509+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /dashboard status=200 duration=42.51ms"}
+{"timestamp": "2026-04-05T11:10:42.027253+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /static/css/dashboard.css"}
+{"timestamp": "2026-04-05T11:10:42.118483+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /static/js/dashboard.js"}
+{"timestamp": "2026-04-05T11:10:42.270275+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /static/css/dashboard.css status=200 duration=243.05ms"}
+{"timestamp": "2026-04-05T11:10:42.306856+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /static/js/dashboard.js status=200 duration=188.4ms"}
+{"timestamp": "2026-04-05T11:10:43.258094+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:10:43.321346+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:10:43.389504+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=68.36ms"}
+{"timestamp": "2026-04-05T11:10:43.435257+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=177.18ms"}
+{"timestamp": "2026-04-05T11:10:43.451109+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:10:43.451852+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.75ms"}
+{"timestamp": "2026-04-05T11:10:46.293855+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:10:46.360250+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:10:46.374521+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=80.67ms"}
+{"timestamp": "2026-04-05T11:10:46.510833+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=150.57ms"}
+{"timestamp": "2026-04-05T11:10:46.592302+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:10:46.593369+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.02ms"}
+{"timestamp": "2026-04-05T11:10:49.260187+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:10:49.350753+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:10:49.470981+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=183.32ms"}
+{"timestamp": "2026-04-05T11:10:49.604852+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=254.13ms"}
+{"timestamp": "2026-04-05T11:10:50.289667+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:10:50.290474+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.82ms"}
+{"timestamp": "2026-04-05T11:10:52.334514+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:10:52.357552+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:10:52.755735+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=398.13ms"}
+{"timestamp": "2026-04-05T11:10:53.197293+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=862.73ms"}
+{"timestamp": "2026-04-05T11:10:53.202245+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:10:53.805018+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=602.78ms"}
+{"timestamp": "2026-04-05T11:10:55.300496+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:10:55.304191+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:10:55.672431+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=366.25ms"}
+{"timestamp": "2026-04-05T11:10:55.676038+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=376.54ms"}
+{"timestamp": "2026-04-05T11:10:56.053629+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:10:56.103468+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=49.88ms"}
+{"timestamp": "2026-04-05T11:10:58.253842+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:10:58.258434+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:10:58.349099+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=95.21ms"}
+{"timestamp": "2026-04-05T11:10:58.423047+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=164.46ms"}
+{"timestamp": "2026-04-05T11:10:58.433311+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:10:58.438250+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=4.94ms"}
+{"timestamp": "2026-04-05T11:11:01.686486+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:11:02.975250+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:11:02.996859+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=1310.45ms"}
+{"timestamp": "2026-04-05T11:11:03.154225+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=178.97ms"}
+{"timestamp": "2026-04-05T11:11:03.848391+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:11:03.849106+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.73ms"}
+{"timestamp": "2026-04-05T11:11:04.549460+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:11:05.172565+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=623.06ms"}
+{"timestamp": "2026-04-05T11:11:05.300675+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:11:05.506543+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=205.85ms"}
+{"timestamp": "2026-04-05T11:11:06.721066+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:11:06.769000+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=47.65ms"}
+{"timestamp": "2026-04-05T11:11:07.722123+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:11:08.101772+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=379.57ms"}
+{"timestamp": "2026-04-05T11:11:08.305126+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:11:08.556853+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=251.79ms"}
+{"timestamp": "2026-04-05T11:11:10.613995+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:11:10.615174+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.2ms"}
+{"timestamp": "2026-04-05T11:11:11.442651+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:11:11.549342+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=106.68ms"}
+{"timestamp": "2026-04-05T11:11:12.576269+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:11:12.629309+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=53.01ms"}
+{"timestamp": "2026-04-05T11:11:14.195999+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:11:14.228842+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=32.83ms"}
+{"timestamp": "2026-04-05T11:11:14.952763+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:11:15.406455+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=453.68ms"}
+{"timestamp": "2026-04-05T11:11:16.514715+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:11:16.648206+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:11:16.876982+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=362.28ms"}
+{"timestamp": "2026-04-05T11:11:17.242405+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:11:17.243330+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.94ms"}
+{"timestamp": "2026-04-05T11:11:17.343738+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=695.37ms"}
+{"timestamp": "2026-04-05T11:11:17.369853+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:11:17.372189+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=2.32ms"}
+{"timestamp": "2026-04-05T11:11:17.452688+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:11:17.456750+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=4.06ms"}
+{"timestamp": "2026-04-05T11:11:19.338458+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:11:19.547860+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:11:19.573108+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=25.23ms"}
+{"timestamp": "2026-04-05T11:11:19.685473+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=347.03ms"}
+{"timestamp": "2026-04-05T11:11:20.994864+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:11:20.995923+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.1ms"}
+{"timestamp": "2026-04-05T11:11:22.330306+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:11:22.346326+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:11:22.833973+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=503.47ms"}
+{"timestamp": "2026-04-05T11:11:22.881717+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=535.39ms"}
+{"timestamp": "2026-04-05T11:11:22.935627+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:11:22.947362+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=11.05ms"}
+{"timestamp": "2026-04-05T11:11:25.323912+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:11:25.329881+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:11:25.476838+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=145.98ms"}
+{"timestamp": "2026-04-05T11:11:25.597450+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:11:25.603196+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=279.4ms"}
+{"timestamp": "2026-04-05T11:11:25.618288+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=20.84ms"}
+{"timestamp": "2026-04-05T11:11:28.363704+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:11:28.382198+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:11:28.436991+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=54.71ms"}
+{"timestamp": "2026-04-05T11:11:28.580408+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=216.69ms"}
+{"timestamp": "2026-04-05T11:11:28.614277+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:11:28.627560+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=13.3ms"}
+{"timestamp": "2026-04-05T11:11:31.375442+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:11:31.469180+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:11:31.501583+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=126.14ms"}
+{"timestamp": "2026-04-05T11:11:31.809357+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:11:31.889913+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=79.44ms"}
+{"timestamp": "2026-04-05T11:11:32.110940+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=641.14ms"}
+{"timestamp": "2026-04-05T11:11:34.287494+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /trigger-error"}
+{"timestamp": "2026-04-05T11:11:35.053998+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:11:35.580172+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:11:36.168525+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=588.33ms"}
+{"timestamp": "2026-04-05T11:11:36.283196+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=1229.19ms"}
+{"timestamp": "2026-04-05T11:11:36.472592+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:11:36.474821+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=2.46ms"}
+{"timestamp": "2026-04-05T11:11:39.117424+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:11:39.199059+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=81.6ms"}
+{"timestamp": "2026-04-05T11:11:39.383724+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:11:39.619206+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:11:39.619968+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.78ms"}
+{"timestamp": "2026-04-05T11:11:39.737792+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=354.06ms"}
+{"timestamp": "2026-04-05T11:11:40.257401+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:11:40.270311+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:11:40.354375+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=83.96ms"}
+{"timestamp": "2026-04-05T11:11:40.383272+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=125.81ms"}
+{"timestamp": "2026-04-05T11:11:40.494103+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:11:40.532246+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=37.83ms"}
+{"timestamp": "2026-04-05T11:11:43.428073+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:11:43.559959+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:11:43.859732+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=431.62ms"}
+{"timestamp": "2026-04-05T11:11:44.150533+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=590.55ms"}
+{"timestamp": "2026-04-05T11:11:44.662462+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:11:44.663245+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.81ms"}
+{"timestamp": "2026-04-05T11:11:46.546654+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:11:46.702241+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:11:46.719664+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=172.96ms"}
+{"timestamp": "2026-04-05T11:11:46.975571+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=273.33ms"}
+{"timestamp": "2026-04-05T11:11:47.001402+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:11:47.042048+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=40.65ms"}
+{"timestamp": "2026-04-05T11:11:49.257432+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:11:49.273328+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:11:49.384461+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=127.05ms"}
+{"timestamp": "2026-04-05T11:11:49.386628+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=113.27ms"}
+{"timestamp": "2026-04-05T11:11:49.458215+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:11:49.459593+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.39ms"}
+{"timestamp": "2026-04-05T11:11:52.317266+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:11:52.336904+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:11:52.368809+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=32.38ms"}
+{"timestamp": "2026-04-05T11:11:52.511354+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=194.08ms"}
+{"timestamp": "2026-04-05T11:11:52.722423+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:11:52.723288+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.86ms"}
+{"timestamp": "2026-04-05T11:11:55.275921+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:11:55.278140+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:11:55.307546+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=31.63ms"}
+{"timestamp": "2026-04-05T11:11:55.349556+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:11:55.350218+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.65ms"}
+{"timestamp": "2026-04-05T11:11:55.385810+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=107.68ms"}
+{"timestamp": "2026-04-05T11:11:58.598845+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:11:58.662741+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=63.9ms"}
+{"timestamp": "2026-04-05T11:11:58.830146+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:11:59.058058+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:11:59.059148+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.1ms"}
+{"timestamp": "2026-04-05T11:11:59.175301+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=345.16ms"}
+{"timestamp": "2026-04-05T11:12:01.373779+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:12:01.377911+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:12:01.575468+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=197.88ms"}
+{"timestamp": "2026-04-05T11:12:01.916452+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=542.66ms"}
+{"timestamp": "2026-04-05T11:12:02.900999+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:12:02.903760+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=2.77ms"}
+{"timestamp": "2026-04-05T11:12:04.778555+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:12:04.850384+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:12:04.880140+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=29.72ms"}
+{"timestamp": "2026-04-05T11:12:04.943018+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=163.49ms"}
+{"timestamp": "2026-04-05T11:12:05.038070+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:12:05.038803+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.74ms"}
+{"timestamp": "2026-04-05T11:12:07.268154+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:12:07.315788+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:12:07.400630+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=84.89ms"}
+{"timestamp": "2026-04-05T11:12:07.401281+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=133.21ms"}
+{"timestamp": "2026-04-05T11:12:07.493813+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:12:07.494844+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.01ms"}
+{"timestamp": "2026-04-05T11:12:11.158926+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:12:11.225978+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:12:11.308073+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=82.15ms"}
+{"timestamp": "2026-04-05T11:12:11.324906+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=166.04ms"}
+{"timestamp": "2026-04-05T11:12:11.345852+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:12:11.347156+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.27ms"}
+{"timestamp": "2026-04-05T11:12:14.157294+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:12:14.226342+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:12:14.280329+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=54.06ms"}
+{"timestamp": "2026-04-05T11:12:14.313033+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:12:14.313797+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.76ms"}
+{"timestamp": "2026-04-05T11:12:14.321355+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=164.1ms"}
+{"timestamp": "2026-04-05T11:12:17.156432+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:12:17.187216+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:12:17.314917+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=127.63ms"}
+{"timestamp": "2026-04-05T11:12:17.322964+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=166.5ms"}
+{"timestamp": "2026-04-05T11:12:17.360320+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:12:17.360916+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.59ms"}
+{"timestamp": "2026-04-05T11:12:20.168269+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:12:20.208962+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:12:20.304698+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=136.47ms"}
+{"timestamp": "2026-04-05T11:12:20.308543+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=99.61ms"}
+{"timestamp": "2026-04-05T11:12:20.333705+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:12:20.334637+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.93ms"}
+{"timestamp": "2026-04-05T11:12:23.151642+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:12:23.228560+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:12:23.336515+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=184.94ms"}
+{"timestamp": "2026-04-05T11:12:23.344064+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=115.56ms"}
+{"timestamp": "2026-04-05T11:12:23.353715+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:12:23.354358+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.63ms"}
+{"timestamp": "2026-04-05T11:12:26.152068+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:12:26.175141+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:12:26.263000+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=87.79ms"}
+{"timestamp": "2026-04-05T11:12:26.280001+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=127.91ms"}
+{"timestamp": "2026-04-05T11:12:26.356435+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:12:26.357209+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.78ms"}
+{"timestamp": "2026-04-05T11:12:29.147065+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:12:29.176036+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:12:29.279073+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=131.96ms"}
+{"timestamp": "2026-04-05T11:12:29.286348+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=110.26ms"}
+{"timestamp": "2026-04-05T11:12:29.353399+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:12:29.354055+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.65ms"}
+{"timestamp": "2026-04-05T11:12:32.156024+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:12:32.177853+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:12:32.257955+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=80.01ms"}
+{"timestamp": "2026-04-05T11:12:32.292667+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=136.66ms"}
+{"timestamp": "2026-04-05T11:12:32.328223+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:12:32.329463+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.26ms"}
+{"timestamp": "2026-04-05T11:12:35.138395+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:12:35.151287+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:12:35.175821+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=24.51ms"}
+{"timestamp": "2026-04-05T11:12:35.218365+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:12:35.219063+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.7ms"}
+{"timestamp": "2026-04-05T11:12:35.256684+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=118.2ms"}
+{"timestamp": "2026-04-05T11:12:38.143699+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:12:38.178418+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:12:38.328054+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=184.4ms"}
+{"timestamp": "2026-04-05T11:12:38.333302+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=155.24ms"}
+{"timestamp": "2026-04-05T11:12:38.360864+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:12:38.361629+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.77ms"}
+{"timestamp": "2026-04-05T11:12:41.239327+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:12:41.267415+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:12:41.295399+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=27.99ms"}
+{"timestamp": "2026-04-05T11:12:41.331595+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:12:41.332299+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.7ms"}
+{"timestamp": "2026-04-05T11:12:41.357109+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=117.87ms"}
+{"timestamp": "2026-04-05T11:12:44.146362+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:12:44.184114+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:12:44.281833+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=135.38ms"}
+{"timestamp": "2026-04-05T11:12:44.288782+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=104.61ms"}
+{"timestamp": "2026-04-05T11:12:44.355228+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:12:44.355951+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.73ms"}
+{"timestamp": "2026-04-05T11:12:47.153534+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:12:47.174239+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:12:47.322181+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=168.62ms"}
+{"timestamp": "2026-04-05T11:12:47.325274+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=151.34ms"}
+{"timestamp": "2026-04-05T11:12:47.351809+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:12:47.352599+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.8ms"}
+{"timestamp": "2026-04-05T11:12:50.162302+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:12:50.205806+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:12:50.247422+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:12:50.248930+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.5ms"}
+{"timestamp": "2026-04-05T11:12:50.250098+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=44.26ms"}
+{"timestamp": "2026-04-05T11:12:50.283815+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=121.53ms"}
+{"timestamp": "2026-04-05T11:12:53.160833+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:12:53.194747+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:12:53.293310+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=98.45ms"}
+{"timestamp": "2026-04-05T11:12:53.319867+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=159.09ms"}
+{"timestamp": "2026-04-05T11:12:53.373878+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:12:53.374611+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.75ms"}
+{"timestamp": "2026-04-05T11:12:56.157659+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:12:56.227550+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:12:56.261889+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:12:56.270873+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=8.98ms"}
+{"timestamp": "2026-04-05T11:12:56.272216+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=44.65ms"}
+{"timestamp": "2026-04-05T11:12:56.334499+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=176.92ms"}
+{"timestamp": "2026-04-05T11:12:59.177406+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:12:59.214167+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:12:59.232775+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=18.58ms"}
+{"timestamp": "2026-04-05T11:12:59.286620+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=109.24ms"}
+{"timestamp": "2026-04-05T11:12:59.481169+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:12:59.483342+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=2.18ms"}
+{"timestamp": "2026-04-05T11:13:02.150312+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:13:02.186665+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:13:02.280650+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=130.31ms"}
+{"timestamp": "2026-04-05T11:13:02.285882+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=99.18ms"}
+{"timestamp": "2026-04-05T11:13:02.358124+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:13:02.360880+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=2.77ms"}
+{"timestamp": "2026-04-05T11:13:05.149944+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:13:05.171600+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:13:05.306026+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=134.37ms"}
+{"timestamp": "2026-04-05T11:13:05.309639+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=159.81ms"}
+{"timestamp": "2026-04-05T11:13:05.364505+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:13:05.365757+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.28ms"}
+{"timestamp": "2026-04-05T11:13:19.324842+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:13:19.439502+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:13:19.461177+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=136.32ms"}
+{"timestamp": "2026-04-05T11:13:19.494928+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:13:19.507478+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=12.63ms"}
+{"timestamp": "2026-04-05T11:13:19.607172+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=167.66ms"}
+{"timestamp": "2026-04-05T11:13:22.746244+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:13:22.839340+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=93.08ms"}
+{"timestamp": "2026-04-05T11:13:23.089724+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:13:23.193900+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:13:23.194641+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.81ms"}
+{"timestamp": "2026-04-05T11:13:23.287570+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=197.83ms"}
+{"timestamp": "2026-04-05T11:13:25.919150+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:13:25.930582+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:13:26.046906+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=127.92ms"}
+{"timestamp": "2026-04-05T11:13:26.244474+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:13:26.245226+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.76ms"}
+{"timestamp": "2026-04-05T11:13:26.263550+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=332.96ms"}
+{"timestamp": "2026-04-05T11:13:27.637539+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /test-alert"}
+{"timestamp": "2026-04-05T11:13:27.641180+00:00", "level": "WARNING", "logger": "app.alerting", "message": "alert_email_skipped", "reason": "SMTP_USER or ALERT_EMAIL_TO not set"}
+{"timestamp": "2026-04-05T11:13:28.515564+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:13:28.546778+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:13:28.673511+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=157.91ms"}
+{"timestamp": "2026-04-05T11:13:28.856040+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=309.24ms"}
+{"timestamp": "2026-04-05T11:13:28.941202+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:13:28.943374+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=2.18ms"}
+{"timestamp": "2026-04-05T11:13:29.181427+00:00", "level": "INFO", "logger": "app.alerting", "message": "discord_alert_sent", "subject": "[TEST] Alert Fired"}
+{"timestamp": "2026-04-05T11:13:29.183212+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /test-alert status=200 duration=1545.69ms"}
+{"timestamp": "2026-04-05T11:13:32.107061+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:13:32.161332+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:13:32.318502+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=211.55ms"}
+{"timestamp": "2026-04-05T11:13:32.342902+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:13:32.343624+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.73ms"}
+{"timestamp": "2026-04-05T11:13:32.514362+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=353.16ms"}
+{"timestamp": "2026-04-05T11:13:35.231359+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:13:35.302226+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=70.86ms"}
+{"timestamp": "2026-04-05T11:13:35.311037+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:13:37.191648+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=1880.59ms"}
+{"timestamp": "2026-04-05T11:13:37.191906+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:13:37.503480+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=311.55ms"}
+{"timestamp": "2026-04-05T11:13:37.763915+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:13:37.783175+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /trigger-error"}
+{"timestamp": "2026-04-05T11:13:37.855283+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:13:37.999754+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=235.82ms"}
+{"timestamp": "2026-04-05T11:13:38.201988+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:13:38.438744+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=236.74ms"}
+{"timestamp": "2026-04-05T11:13:38.439448+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=584.55ms"}
+{"timestamp": "2026-04-05T11:13:40.512393+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:13:40.549148+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:13:40.669052+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=157.13ms"}
+{"timestamp": "2026-04-05T11:13:41.058926+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=509.77ms"}
+{"timestamp": "2026-04-05T11:13:41.059270+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:13:41.213740+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=154.46ms"}
+{"timestamp": "2026-04-05T11:13:43.278295+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:13:43.296976+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:13:43.392998+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=96.07ms"}
+{"timestamp": "2026-04-05T11:13:43.393804+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=115.65ms"}
+{"timestamp": "2026-04-05T11:13:43.456120+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:13:43.458570+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=2.48ms"}
+{"timestamp": "2026-04-05T11:13:46.504512+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:13:46.506554+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:13:46.928077+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=423.43ms"}
+{"timestamp": "2026-04-05T11:13:47.081554+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=575.4ms"}
+{"timestamp": "2026-04-05T11:13:47.533978+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:13:47.535327+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.36ms"}
+{"timestamp": "2026-04-05T11:13:50.149545+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:13:50.163484+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:13:50.217669+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=54.17ms"}
+{"timestamp": "2026-04-05T11:13:50.259829+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=110.3ms"}
+{"timestamp": "2026-04-05T11:13:50.271749+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:13:50.273179+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.38ms"}
+{"timestamp": "2026-04-05T11:13:52.643907+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:13:52.764369+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=120.44ms"}
+{"timestamp": "2026-04-05T11:13:52.778171+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:13:53.149261+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=370.97ms"}
+{"timestamp": "2026-04-05T11:13:53.149557+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:13:53.152271+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=2.69ms"}
+{"timestamp": "2026-04-05T11:14:00.609583+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /trigger-alert-now"}
+{"timestamp": "2026-04-05T11:14:00.612798+00:00", "level": "WARNING", "logger": "app.alerting", "message": "alert_email_skipped", "reason": "SMTP_USER or ALERT_EMAIL_TO not set"}
+{"timestamp": "2026-04-05T11:14:01.553724+00:00", "level": "INFO", "logger": "app.alerting", "message": "discord_alert_sent", "subject": "[TEST] Intentional Alert"}
+{"timestamp": "2026-04-05T11:14:01.568341+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /trigger-alert-now status=500 duration=958.72ms"}
+{"timestamp": "2026-04-05T11:22:39.610199+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T11:22:39.753354+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T11:22:41.093406+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T11:22:41.230112+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T11:22:41.303665+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T11:22:44.606719+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /dashboard"}
+{"timestamp": "2026-04-05T11:22:44.621320+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /dashboard status=200 duration=14.61ms"}
+{"timestamp": "2026-04-05T11:22:44.791428+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /static/css/dashboard.css"}
+{"timestamp": "2026-04-05T11:22:44.884714+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /static/js/dashboard.js"}
+{"timestamp": "2026-04-05T11:22:45.027590+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /static/css/dashboard.css status=200 duration=236.18ms"}
+{"timestamp": "2026-04-05T11:22:45.076374+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /static/js/dashboard.js status=200 duration=191.67ms"}
+{"timestamp": "2026-04-05T11:22:45.271012+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:22:45.356219+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:22:45.413677+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=57.51ms"}
+{"timestamp": "2026-04-05T11:22:45.434159+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:22:45.434987+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.83ms"}
+{"timestamp": "2026-04-05T11:22:45.453555+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=182.62ms"}
+{"timestamp": "2026-04-05T11:22:48.272413+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:22:48.301297+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:22:48.401193+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=99.8ms"}
+{"timestamp": "2026-04-05T11:22:48.454554+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=182.15ms"}
+{"timestamp": "2026-04-05T11:22:48.496729+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:22:48.497785+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.06ms"}
+{"timestamp": "2026-04-05T11:22:51.281738+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:22:51.304451+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:22:51.402469+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=120.73ms"}
+{"timestamp": "2026-04-05T11:22:51.450509+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=146.0ms"}
+{"timestamp": "2026-04-05T11:22:51.494959+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:22:51.496095+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.11ms"}
+{"timestamp": "2026-04-05T11:22:54.277265+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:22:54.299694+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:22:54.398415+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=121.12ms"}
+{"timestamp": "2026-04-05T11:22:54.407898+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=108.21ms"}
+{"timestamp": "2026-04-05T11:22:54.452833+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:22:54.453698+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.85ms"}
+{"timestamp": "2026-04-05T11:22:57.279959+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:22:57.301258+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:22:57.401798+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=121.76ms"}
+{"timestamp": "2026-04-05T11:22:57.409306+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=107.99ms"}
+{"timestamp": "2026-04-05T11:22:57.494511+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:22:57.495237+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.72ms"}
+{"timestamp": "2026-04-05T11:23:00.287173+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:23:00.295228+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:23:00.378909+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=83.67ms"}
+{"timestamp": "2026-04-05T11:23:00.400339+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:23:00.401276+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.95ms"}
+{"timestamp": "2026-04-05T11:23:00.437561+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=150.41ms"}
+{"timestamp": "2026-04-05T11:23:03.277539+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:23:03.297531+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:23:03.361156+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=63.68ms"}
+{"timestamp": "2026-04-05T11:23:03.378586+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:23:03.379318+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.73ms"}
+{"timestamp": "2026-04-05T11:23:03.388756+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=111.22ms"}
+{"timestamp": "2026-04-05T11:23:06.272797+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:23:06.320906+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:23:06.466446+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=194.1ms"}
+{"timestamp": "2026-04-05T11:23:06.497756+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=177.16ms"}
+{"timestamp": "2026-04-05T11:23:06.514005+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:23:06.515030+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.0ms"}
+{"timestamp": "2026-04-05T11:23:09.287480+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:23:09.370985+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:23:09.475937+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=188.5ms"}
+{"timestamp": "2026-04-05T11:23:09.490571+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=119.74ms"}
+{"timestamp": "2026-04-05T11:23:09.520725+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:23:09.521390+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.66ms"}
+{"timestamp": "2026-04-05T11:23:12.279963+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:23:12.389798+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:23:12.398934+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=118.9ms"}
+{"timestamp": "2026-04-05T11:23:12.514268+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=124.46ms"}
+{"timestamp": "2026-04-05T11:23:12.532794+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:23:12.533407+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.62ms"}
+{"timestamp": "2026-04-05T11:23:13.401215+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /trigger-alert-now"}
+{"timestamp": "2026-04-05T11:23:13.401678+00:00", "level": "WARNING", "logger": "app.alerting", "message": "alert_email_skipped", "reason": "SMTP_USER or ALERT_EMAIL_TO not set"}
+{"timestamp": "2026-04-05T11:23:14.325092+00:00", "level": "INFO", "logger": "app.alerting", "message": "discord_alert_sent", "subject": "[TEST] Intentional Alert"}
+{"timestamp": "2026-04-05T11:23:14.329803+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /trigger-alert-now status=500 duration=928.43ms"}
+{"timestamp": "2026-04-05T11:23:15.266565+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:23:15.333850+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:23:15.443767+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=109.89ms"}
+{"timestamp": "2026-04-05T11:23:15.481987+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=215.41ms"}
+{"timestamp": "2026-04-05T11:23:15.482212+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:23:15.562955+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=80.68ms"}
+{"timestamp": "2026-04-05T11:23:18.269268+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:23:18.311447+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:23:18.400492+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=131.26ms"}
+{"timestamp": "2026-04-05T11:23:18.408470+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=96.94ms"}
+{"timestamp": "2026-04-05T11:23:18.443610+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:23:18.444623+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.05ms"}
+{"timestamp": "2026-04-05T11:23:21.268116+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:23:21.297563+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:23:21.384231+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=86.59ms"}
+{"timestamp": "2026-04-05T11:23:21.387209+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=119.01ms"}
+{"timestamp": "2026-04-05T11:23:21.459817+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:23:21.460736+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.91ms"}
+{"timestamp": "2026-04-05T11:23:22.159227+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /trigger-alert-now"}
+{"timestamp": "2026-04-05T11:23:22.159706+00:00", "level": "WARNING", "logger": "app.alerting", "message": "alert_email_skipped", "reason": "SMTP_USER or ALERT_EMAIL_TO not set"}
+{"timestamp": "2026-04-05T11:23:22.964318+00:00", "level": "INFO", "logger": "app.alerting", "message": "discord_alert_sent", "subject": "[TEST] Intentional Alert"}
+{"timestamp": "2026-04-05T11:23:22.966592+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /trigger-alert-now status=500 duration=807.23ms"}
+{"timestamp": "2026-04-05T11:23:24.268464+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:23:24.294487+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:23:24.327147+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=32.64ms"}
+{"timestamp": "2026-04-05T11:23:24.367617+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:23:24.368550+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.88ms"}
+{"timestamp": "2026-04-05T11:23:24.391451+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=122.97ms"}
+{"timestamp": "2026-04-05T11:23:27.268421+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:23:27.300537+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:23:27.388347+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=119.81ms"}
+{"timestamp": "2026-04-05T11:23:27.409222+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=108.64ms"}
+{"timestamp": "2026-04-05T11:23:27.465442+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:23:27.466538+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.08ms"}
+{"timestamp": "2026-04-05T11:23:30.274344+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:23:30.295232+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:23:30.381040+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=85.74ms"}
+{"timestamp": "2026-04-05T11:23:30.398710+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=124.33ms"}
+{"timestamp": "2026-04-05T11:23:30.489703+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:23:30.490585+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.84ms"}
+{"timestamp": "2026-04-05T11:23:33.274991+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:23:33.293460+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:23:33.334818+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=41.36ms"}
+{"timestamp": "2026-04-05T11:23:33.365889+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:23:33.366828+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.92ms"}
+{"timestamp": "2026-04-05T11:23:33.384953+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=109.97ms"}
+{"timestamp": "2026-04-05T11:23:36.315263+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:23:36.348192+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:23:36.428343+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=80.15ms"}
+{"timestamp": "2026-04-05T11:23:36.447906+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=132.66ms"}
+{"timestamp": "2026-04-05T11:23:36.460599+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:23:36.461437+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.86ms"}
+{"timestamp": "2026-04-05T11:23:39.267500+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:23:39.291984+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:23:39.345592+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=53.64ms"}
+{"timestamp": "2026-04-05T11:23:39.381189+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:23:39.381896+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.67ms"}
+{"timestamp": "2026-04-05T11:23:39.389530+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=122.05ms"}
+{"timestamp": "2026-04-05T11:23:42.276569+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:23:42.317165+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:23:42.415840+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=139.31ms"}
+{"timestamp": "2026-04-05T11:23:42.425514+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=108.28ms"}
+{"timestamp": "2026-04-05T11:23:42.461371+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:23:42.462404+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.04ms"}
+{"timestamp": "2026-04-05T11:23:45.266950+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:23:45.296654+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:23:45.331347+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=34.65ms"}
+{"timestamp": "2026-04-05T11:23:45.348804+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:23:45.349535+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.7ms"}
+{"timestamp": "2026-04-05T11:23:45.398891+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=131.83ms"}
+{"timestamp": "2026-04-05T11:23:48.281723+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:23:48.288342+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:23:48.381513+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=93.2ms"}
+{"timestamp": "2026-04-05T11:23:48.512750+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=231.05ms"}
+{"timestamp": "2026-04-05T11:23:48.513388+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:23:48.564361+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=50.97ms"}
+{"timestamp": "2026-04-05T11:23:51.271366+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:23:51.292720+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:23:51.382838+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=90.06ms"}
+{"timestamp": "2026-04-05T11:23:51.392151+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=120.79ms"}
+{"timestamp": "2026-04-05T11:23:51.477986+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:23:51.478918+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.9ms"}
+{"timestamp": "2026-04-05T11:23:54.277941+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:23:54.301651+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:23:54.425869+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=147.9ms"}
+{"timestamp": "2026-04-05T11:23:54.438862+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=136.84ms"}
+{"timestamp": "2026-04-05T11:23:54.487256+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:23:54.488600+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.43ms"}
+{"timestamp": "2026-04-05T11:23:58.156603+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:23:58.197480+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:23:58.345923+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=148.47ms"}
+{"timestamp": "2026-04-05T11:23:58.348380+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=191.69ms"}
+{"timestamp": "2026-04-05T11:23:58.396482+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:23:58.397213+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.7ms"}
+{"timestamp": "2026-04-05T11:24:00.330078+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:24:00.359614+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:24:00.448782+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=89.16ms"}
+{"timestamp": "2026-04-05T11:24:00.461129+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=131.14ms"}
+{"timestamp": "2026-04-05T11:24:00.497839+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:24:00.498458+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.63ms"}
+{"timestamp": "2026-04-05T11:24:03.272237+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:24:03.294789+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:24:03.424988+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=152.71ms"}
+{"timestamp": "2026-04-05T11:24:03.457396+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=162.65ms"}
+{"timestamp": "2026-04-05T11:24:03.480504+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:24:03.481730+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.2ms"}
+{"timestamp": "2026-04-05T11:24:06.278539+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:24:06.298412+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:24:06.410196+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=111.73ms"}
+{"timestamp": "2026-04-05T11:24:06.431397+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=152.83ms"}
+{"timestamp": "2026-04-05T11:24:06.484840+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:24:06.486046+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.24ms"}
+{"timestamp": "2026-04-05T11:24:10.150088+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:24:10.164063+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:24:10.194180+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=30.12ms"}
+{"timestamp": "2026-04-05T11:24:10.230699+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:24:10.231761+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.99ms"}
+{"timestamp": "2026-04-05T11:24:10.261036+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=110.97ms"}
+{"timestamp": "2026-04-05T11:24:13.157683+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:24:13.232498+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:24:13.321012+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=163.39ms"}
+{"timestamp": "2026-04-05T11:24:13.324198+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=91.78ms"}
+{"timestamp": "2026-04-05T11:24:13.340708+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:24:13.341697+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.96ms"}
+{"timestamp": "2026-04-05T11:24:16.170878+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:24:16.207120+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:24:16.304457+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=133.25ms"}
+{"timestamp": "2026-04-05T11:24:16.312431+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=105.36ms"}
+{"timestamp": "2026-04-05T11:24:16.339683+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:24:16.340335+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.65ms"}
+{"timestamp": "2026-04-05T11:24:19.155766+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:24:19.213548+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:24:19.259858+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=46.39ms"}
+{"timestamp": "2026-04-05T11:24:19.299880+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:24:19.300642+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.77ms"}
+{"timestamp": "2026-04-05T11:24:19.308438+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=152.75ms"}
+{"timestamp": "2026-04-05T11:24:22.152791+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:24:22.192704+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:24:22.277072+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=124.36ms"}
+{"timestamp": "2026-04-05T11:24:22.310551+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=117.81ms"}
+{"timestamp": "2026-04-05T11:24:22.340711+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:24:22.341377+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.66ms"}
+{"timestamp": "2026-04-05T11:24:25.158163+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:24:25.283058+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=124.98ms"}
+{"timestamp": "2026-04-05T11:24:25.287336+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:24:25.289540+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=2.24ms"}
+{"timestamp": "2026-04-05T11:24:25.301517+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:24:25.335075+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=33.56ms"}
+{"timestamp": "2026-04-05T11:24:28.144841+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:24:28.172708+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:24:28.270050+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=125.13ms"}
+{"timestamp": "2026-04-05T11:24:28.318168+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=145.45ms"}
+{"timestamp": "2026-04-05T11:24:28.344354+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:24:28.345114+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.76ms"}
+{"timestamp": "2026-04-05T11:24:31.156995+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:24:31.259375+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:24:31.295960+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=36.58ms"}
+{"timestamp": "2026-04-05T11:24:31.307134+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:24:31.307842+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.7ms"}
+{"timestamp": "2026-04-05T11:24:31.358843+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=201.95ms"}
+{"timestamp": "2026-04-05T11:24:34.161444+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:24:34.224436+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:24:34.285775+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=61.4ms"}
+{"timestamp": "2026-04-05T11:24:34.290987+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=129.59ms"}
+{"timestamp": "2026-04-05T11:24:34.321424+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:24:34.322189+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.77ms"}
+{"timestamp": "2026-04-05T11:24:37.148916+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:24:37.171776+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:24:37.285934+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=136.89ms"}
+{"timestamp": "2026-04-05T11:24:37.297692+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=125.83ms"}
+{"timestamp": "2026-04-05T11:24:37.340114+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:24:37.340969+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.86ms"}
+{"timestamp": "2026-04-05T11:24:40.160326+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:24:40.208074+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:24:40.317673+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=157.32ms"}
+{"timestamp": "2026-04-05T11:24:40.322219+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=114.19ms"}
+{"timestamp": "2026-04-05T11:24:40.352664+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:24:40.353477+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.84ms"}
+{"timestamp": "2026-04-05T11:24:43.142611+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:24:43.173537+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:24:43.261680+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=88.13ms"}
+{"timestamp": "2026-04-05T11:24:43.268591+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=125.98ms"}
+{"timestamp": "2026-04-05T11:24:43.332305+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:24:43.333030+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.72ms"}
+{"timestamp": "2026-04-05T11:24:46.143026+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:24:46.155868+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:24:46.208332+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=52.48ms"}
+{"timestamp": "2026-04-05T11:24:46.236473+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:24:46.237128+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.64ms"}
+{"timestamp": "2026-04-05T11:24:46.252506+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=109.51ms"}
+{"timestamp": "2026-04-05T11:24:49.152406+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:24:49.163082+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:24:49.207736+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=44.62ms"}
+{"timestamp": "2026-04-05T11:24:49.265260+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=112.64ms"}
+{"timestamp": "2026-04-05T11:24:49.267524+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:24:49.270048+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=2.55ms"}
+{"timestamp": "2026-04-05T11:24:52.157152+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:24:52.188244+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:24:52.267608+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=79.43ms"}
+{"timestamp": "2026-04-05T11:24:52.272882+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=115.74ms"}
+{"timestamp": "2026-04-05T11:24:52.306989+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:24:52.307674+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.68ms"}
+{"timestamp": "2026-04-05T11:24:55.154302+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:24:55.196674+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:24:55.275596+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=79.23ms"}
+{"timestamp": "2026-04-05T11:24:55.332499+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=178.18ms"}
+{"timestamp": "2026-04-05T11:24:55.360644+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:24:55.362506+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.86ms"}
+{"timestamp": "2026-04-05T11:24:58.150301+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:24:58.182103+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:24:58.286686+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=136.32ms"}
+{"timestamp": "2026-04-05T11:24:58.321317+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=139.43ms"}
+{"timestamp": "2026-04-05T11:24:58.352472+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:24:58.354691+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=2.21ms"}
+{"timestamp": "2026-04-05T11:25:01.148578+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:25:01.166808+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:25:01.254355+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=87.52ms"}
+{"timestamp": "2026-04-05T11:25:01.268532+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=119.86ms"}
+{"timestamp": "2026-04-05T11:25:01.346867+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:25:01.347583+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.72ms"}
+{"timestamp": "2026-04-05T11:25:04.153210+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:25:04.175857+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:25:04.269655+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=116.37ms"}
+{"timestamp": "2026-04-05T11:25:04.277369+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=102.33ms"}
+{"timestamp": "2026-04-05T11:25:04.414063+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:25:04.415169+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.09ms"}
+{"timestamp": "2026-04-05T11:25:07.157552+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:25:07.188747+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:25:07.278651+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=89.81ms"}
+{"timestamp": "2026-04-05T11:25:07.287037+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=129.4ms"}
+{"timestamp": "2026-04-05T11:25:07.362609+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:25:07.364618+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=2.0ms"}
+{"timestamp": "2026-04-05T11:25:21.215370+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:25:21.232447+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:25:21.308765+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=76.04ms"}
+{"timestamp": "2026-04-05T11:25:21.344157+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=128.72ms"}
+{"timestamp": "2026-04-05T11:25:21.361907+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:25:21.362702+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.8ms"}
+{"timestamp": "2026-04-05T11:26:21.166971+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:26:21.193113+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:26:21.275261+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=82.2ms"}
+{"timestamp": "2026-04-05T11:26:21.290724+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=123.87ms"}
+{"timestamp": "2026-04-05T11:26:21.319447+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:26:21.320853+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.41ms"}
+{"timestamp": "2026-04-05T11:27:21.170709+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:27:21.190958+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:27:21.312862+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=121.96ms"}
+{"timestamp": "2026-04-05T11:27:21.333582+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:27:21.334271+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.68ms"}
+{"timestamp": "2026-04-05T11:27:21.337691+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=167.11ms"}
+{"timestamp": "2026-04-05T11:28:21.164417+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:28:21.194731+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:28:21.313369+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=149.07ms"}
+{"timestamp": "2026-04-05T11:28:21.313905+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=119.27ms"}
+{"timestamp": "2026-04-05T11:28:21.356330+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:28:21.356941+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.6ms"}
+{"timestamp": "2026-04-05T11:29:21.158426+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:29:21.185385+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:29:21.268840+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=83.54ms"}
+{"timestamp": "2026-04-05T11:29:21.282352+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=123.93ms"}
+{"timestamp": "2026-04-05T11:29:21.294431+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:29:21.295111+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.7ms"}
+{"timestamp": "2026-04-05T11:29:34.124748+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T11:29:34.234047+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T11:29:34.273206+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T11:29:49.901138+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T11:29:49.998819+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T11:29:50.035791+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T11:30:21.144182+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:30:21.153131+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:30:21.189299+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=36.09ms"}
+{"timestamp": "2026-04-05T11:30:21.229238+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:30:21.230800+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.56ms"}
+{"timestamp": "2026-04-05T11:30:21.251520+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=107.33ms"}
+{"timestamp": "2026-04-05T11:31:21.153567+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:31:21.162696+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:31:21.195633+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=32.9ms"}
+{"timestamp": "2026-04-05T11:31:21.244498+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:31:21.245453+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.96ms"}
+{"timestamp": "2026-04-05T11:31:21.260699+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=107.14ms"}
+{"timestamp": "2026-04-05T11:32:03.557900+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T11:32:03.627920+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T11:32:03.658772+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T11:37:54.893974+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T11:37:55.200555+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T11:37:56.279222+00:00", "level": "INFO", "logger": "app.alerting", "message": "alert_manager_started", "check_interval": 30, "cooldown": 300, "error_rate_threshold": 0.1, "email_configured": false, "discord_configured": true}
+{"timestamp": "2026-04-05T11:37:56.347910+00:00", "level": "INFO", "logger": "app", "message": "db_connected", "attempt": 1}
+{"timestamp": "2026-04-05T11:37:56.382261+00:00", "level": "WARNING", "logger": "werkzeug", "message": " * Debugger is active!"}
+{"timestamp": "2026-04-05T11:37:56.442710+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:37:56.455314+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:37:56.489416+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=34.05ms"}
+{"timestamp": "2026-04-05T11:37:56.536144+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:37:56.538095+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=2.38ms"}
+{"timestamp": "2026-04-05T11:37:56.557650+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=114.85ms"}
+{"timestamp": "2026-04-05T11:37:58.258423+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:37:58.361803+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:37:58.410506+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=48.69ms"}
+{"timestamp": "2026-04-05T11:37:58.508971+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:37:58.511488+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=253.05ms"}
+{"timestamp": "2026-04-05T11:37:58.513732+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=4.77ms"}
+{"timestamp": "2026-04-05T11:38:00.321329+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:38:00.393560+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:38:00.530504+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:38:00.539892+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=218.59ms"}
+{"timestamp": "2026-04-05T11:38:00.542755+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=12.25ms"}
+{"timestamp": "2026-04-05T11:38:00.641411+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=247.84ms"}
+{"timestamp": "2026-04-05T11:38:04.175335+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:38:04.212656+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:38:04.487027+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=311.77ms"}
+{"timestamp": "2026-04-05T11:38:04.490116+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=277.53ms"}
+{"timestamp": "2026-04-05T11:38:04.518618+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:38:04.520378+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.82ms"}
+{"timestamp": "2026-04-05T11:38:06.372042+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T11:38:06.373941+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T11:38:06.424983+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=50.93ms"}
+{"timestamp": "2026-04-05T11:38:06.473929+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T11:38:06.474822+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.87ms"}
+{"timestamp": "2026-04-05T11:38:06.486998+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=114.92ms"}
+{"timestamp": "2026-04-05T11:38:07.805335+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /dashboard"}
+{"timestamp": "2026-04-05T11:38:07.816278+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /dashboard status=200 duration=10.92ms"}
+{"timestamp": "2026-04-05T11:38:07.926964+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /static/css/dashboard.css"}
+{"timestamp": "2026-04-05T11:38:08.018159+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /static/js/dashboard.js"}
+{"timestamp": "2026-04-05T11:38:08.182820+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /static/css/dashboard.css status=200 duration=255.85ms"}
+{"timestamp": "2026-04-05T11:38:08.247288+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /static/js/dashboard.js status=200 duration=229.16ms"}
+{"timestamp": "2026-04-05T11:38:26.360641+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /dashboard"}
+{"timestamp": "2026-04-05T11:38:26.368791+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /dashboard status=200 duration=8.16ms"}
+{"timestamp": "2026-04-05T11:38:26.574691+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /static/css/dashboard.css"}
+{"timestamp": "2026-04-05T11:38:26.577533+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /static/css/dashboard.css status=304 duration=2.88ms"}
+{"timestamp": "2026-04-05T11:38:26.667533+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /static/js/dashboard.js"}
+{"timestamp": "2026-04-05T11:38:26.669706+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /static/js/dashboard.js status=304 duration=2.14ms"}
+{"timestamp": "2026-04-05T12:02:38.106634+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /dashboard"}
+{"timestamp": "2026-04-05T12:02:38.129616+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /dashboard status=200 duration=23.3ms"}
+{"timestamp": "2026-04-05T12:02:38.298461+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /static/css/dashboard.css"}
+{"timestamp": "2026-04-05T12:02:38.316210+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /static/css/dashboard.css status=200 duration=17.84ms"}
+{"timestamp": "2026-04-05T12:02:38.415638+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /static/js/dashboard.js"}
+{"timestamp": "2026-04-05T12:02:38.447598+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /static/js/dashboard.js status=200 duration=31.97ms"}
+{"timestamp": "2026-04-05T12:02:39.519340+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T12:02:39.702580+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T12:02:39.820238+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=300.81ms"}
+{"timestamp": "2026-04-05T12:02:39.832599+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=130.0ms"}
+{"timestamp": "2026-04-05T12:02:39.850515+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T12:02:39.881758+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=31.26ms"}
+{"timestamp": "2026-04-05T12:02:39.963060+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /favicon.ico"}
+{"timestamp": "2026-04-05T12:02:40.021106+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /favicon.ico status=404 duration=58.05ms"}
+{"timestamp": "2026-04-05T12:02:42.532434+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T12:02:42.574524+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T12:02:42.630749+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=56.2ms"}
+{"timestamp": "2026-04-05T12:02:42.651105+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T12:02:42.652254+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.16ms"}
+{"timestamp": "2026-04-05T12:02:42.669413+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=136.97ms"}
+{"timestamp": "2026-04-05T12:02:45.462833+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T12:02:45.501667+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T12:02:45.543579+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=41.92ms"}
+{"timestamp": "2026-04-05T12:02:45.580095+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T12:02:45.581235+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.16ms"}
+{"timestamp": "2026-04-05T12:02:45.599257+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=136.45ms"}
+{"timestamp": "2026-04-05T12:02:48.449858+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T12:02:48.464990+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T12:02:48.519906+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=54.94ms"}
+{"timestamp": "2026-04-05T12:02:48.563385+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=113.52ms"}
+{"timestamp": "2026-04-05T12:02:48.566388+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T12:02:48.568363+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=2.02ms"}
+{"timestamp": "2026-04-05T12:02:51.457870+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T12:02:51.474786+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T12:02:51.583106+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=125.2ms"}
+{"timestamp": "2026-04-05T12:02:51.586340+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=111.53ms"}
+{"timestamp": "2026-04-05T12:02:51.657919+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T12:02:51.661929+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=6.42ms"}
+{"timestamp": "2026-04-05T12:03:07.153201+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /dashboard"}
+{"timestamp": "2026-04-05T12:03:07.155034+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /dashboard status=200 duration=1.89ms"}
+{"timestamp": "2026-04-05T12:03:07.311941+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /static/css/dashboard.css"}
+{"timestamp": "2026-04-05T12:03:07.323265+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /static/css/dashboard.css status=304 duration=11.31ms"}
+{"timestamp": "2026-04-05T12:03:07.400856+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /static/js/dashboard.js"}
+{"timestamp": "2026-04-05T12:03:07.406272+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /static/js/dashboard.js status=200 duration=5.42ms"}
+{"timestamp": "2026-04-05T12:03:07.616293+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T12:03:07.632933+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T12:03:07.697747+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=64.68ms"}
+{"timestamp": "2026-04-05T12:03:07.704693+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T12:03:07.706333+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.69ms"}
+{"timestamp": "2026-04-05T12:03:07.824987+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=208.68ms"}
+{"timestamp": "2026-04-05T12:03:10.620078+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T12:03:10.629305+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T12:03:10.665509+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=36.16ms"}
+{"timestamp": "2026-04-05T12:03:10.709280+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T12:03:10.710093+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.81ms"}
+{"timestamp": "2026-04-05T12:03:10.727732+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=107.64ms"}
+{"timestamp": "2026-04-05T12:03:13.627950+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T12:03:13.643956+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T12:03:13.687412+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=43.4ms"}
+{"timestamp": "2026-04-05T12:03:13.739375+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T12:03:13.740562+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.23ms"}
+{"timestamp": "2026-04-05T12:03:13.745348+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=117.39ms"}
+{"timestamp": "2026-04-05T12:03:16.630797+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T12:03:16.652464+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T12:03:16.748477+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=117.6ms"}
+{"timestamp": "2026-04-05T12:03:16.755413+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=102.91ms"}
+{"timestamp": "2026-04-05T12:03:16.853368+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T12:03:16.854230+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=0.86ms"}
+{"timestamp": "2026-04-05T12:03:19.626604+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T12:03:19.666223+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T12:03:19.763496+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=136.87ms"}
+{"timestamp": "2026-04-05T12:03:19.788778+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=122.59ms"}
+{"timestamp": "2026-04-05T12:03:19.808210+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T12:03:19.809403+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.23ms"}
+{"timestamp": "2026-04-05T12:03:22.627594+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T12:03:22.660982+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T12:03:22.747165+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=86.19ms"}
+{"timestamp": "2026-04-05T12:03:22.758292+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=130.66ms"}
+{"timestamp": "2026-04-05T12:03:22.834354+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T12:03:22.835723+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.39ms"}
+{"timestamp": "2026-04-05T12:03:25.639279+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T12:03:25.679141+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T12:03:25.747365+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=68.25ms"}
+{"timestamp": "2026-04-05T12:03:25.758610+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=119.37ms"}
+{"timestamp": "2026-04-05T12:03:25.778279+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T12:03:25.779328+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.04ms"}
+{"timestamp": "2026-04-05T12:03:29.228065+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /metrics"}
+{"timestamp": "2026-04-05T12:03:29.264758+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /logs"}
+{"timestamp": "2026-04-05T12:03:29.307842+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /logs status=200 duration=43.08ms"}
+{"timestamp": "2026-04-05T12:03:29.341015+00:00", "level": "INFO", "logger": "app", "message": "Request started: GET /alert-status"}
+{"timestamp": "2026-04-05T12:03:29.342047+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /alert-status status=200 duration=1.04ms"}
+{"timestamp": "2026-04-05T12:03:29.365238+00:00", "level": "INFO", "logger": "app", "message": "Request finished: GET /metrics status=200 duration=137.25ms"}

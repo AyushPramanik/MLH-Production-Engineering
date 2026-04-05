@@ -7,7 +7,7 @@ import time
 
 import psutil
 from dotenv import load_dotenv
-from flask import Flask, g, jsonify, request
+from flask import Flask, g, jsonify, request, render_template
 
 from app.database import init_db
 from app.logging_config import LOG_FILE, configure_logging
@@ -63,19 +63,19 @@ def create_app():
 
     # Alerting
     from app.metrics_store import store as metrics_store
-    from app.alerting import AlertManager, EmailNotifier, DiscordNotifier
+    from app.alerting import AlertManager, EmailNotifier, DiscordNotifier, _now
 
-    @app.route("/test-alert")
-    def test_alert():
-        mgr = getattr(app, "alert_manager", None)
-        if mgr is None:
-            return jsonify({"error": "alert manager not running"}), 503
-        for notifier in mgr._notifiers:
-            notifier.send(
-                "[TEST] Alert Fired",
-                "This is a test alert from your incident response system."
-            )
-        return jsonify({"status": "test alert sent"})
+    # @app.route("/test-alert")
+    # def test_alert():
+    #     mgr = getattr(app, "alert_manager", None)
+    #     if mgr is None:
+    #         return jsonify({"error": "alert manager not running"}), 503
+    #     for notifier in mgr._notifiers:
+    #         notifier.send(
+    #             "[TEST] Alert Fired",
+    #             "This is a test alert from your incident response system."
+    #         )
+    #     return jsonify({"status": "test alert sent"})
     
 
     if not app.config.get("TESTING"):
@@ -94,6 +94,49 @@ def create_app():
         
         alert_manager.start()
         app.alert_manager = alert_manager
+        
+        # -- Test routes: manual alert and intentional error trigger --
+        @app.route("/test-alert")
+        def test_alert():
+            mgr = getattr(app, "alert_manager", None)
+            if mgr is None:
+                return jsonify({"error": "alert manager not running"}), 503
+            for notifier in getattr(mgr, "_notifiers", []):
+                try:
+                    notifier.send(
+                        "[TEST] Alert Fired",
+                        "This is a test alert from your incident response system."
+                    )
+                except Exception:
+                    logger.exception("test_alert_send_failed")
+            return jsonify({"status": "test alert sent"})
+
+        @app.route("/trigger-error")
+        def trigger_error():
+            # Intentionally raise an exception to produce a 500 and test alerting.
+            raise RuntimeError("Intentional test error triggered via /trigger-error")
+
+        @app.route("/trigger-alert-now")
+        def trigger_alert_now():
+            """Send an immediate test alert without raising an exception.
+
+            This is useful when `FLASK_DEBUG` is enabled (debug mode re-raises
+            exceptions and prevents the 500 errorhandler from running). The
+            route returns a 500 status to simulate an error while still
+            sending the alert immediately.
+            """
+            mgr = getattr(app, "alert_manager", None)
+            if mgr is None:
+                return jsonify({"error": "alert manager not running"}), 503
+            try:
+                body = (
+                    "Intentional alert triggered via /trigger-alert-now\n\n"
+                    f"Path: {request.path}\nMethod: {request.method}\nTime: {_now()}\n"
+                )
+                mgr._notify("[TEST] Intentional Alert", body)
+            except Exception:
+                logger.exception("manual_alert_failed")
+            return jsonify({"status": "intentional alert sent"}), 500
 
     # Request logging
     @app.before_request
@@ -105,7 +148,13 @@ def create_app():
     def after_request(response):
         start = getattr(g, "start_time", None)
         duration_ms = round((time.perf_counter() - start) * 1000, 2) if start else None
-        metrics_store.record(response.status_code)
+        try:
+            metrics_store.record(response.status_code, duration_ms)
+        except Exception:
+            try:
+                metrics_store.record(response.status_code)
+            except Exception:
+                pass
         logger.info(f"Request finished: {request.method} {request.path} status={response.status_code} duration={duration_ms}ms")
         return response
 
@@ -119,8 +168,11 @@ def create_app():
         mem = psutil.virtual_memory()
         process = psutil.Process(os.getpid())
         snap = metrics_store.snapshot()
+        cpu = psutil.cpu_percent(interval=0.1)
+        traffic_rps = round(snap["total"] / snap["window_seconds"], 2) if snap.get("window_seconds") else 0.0
+        saturation = round(max(cpu, mem.percent), 2)
         return jsonify({
-            "cpu_percent": psutil.cpu_percent(interval=0.1),
+            "cpu_percent": cpu,
             "memory": {
                 "total_mb": round(mem.total / 1024 / 1024, 2),
                 "used_mb": round(mem.used / 1024 / 1024, 2),
@@ -129,8 +181,19 @@ def create_app():
             },
             "uptime_seconds": round(time.time() - process.create_time(), 2),
             "requests": snap,
+            "traffic_rps": traffic_rps,
+            "latency": {
+                "avg_ms": snap.get("latency_avg_ms", 0.0),
+                "p95_ms": snap.get("latency_p95_ms", 0.0),
+                "count": snap.get("latency_count", 0),
+            },
+            "saturation": saturation,
             "hostname": socket.gethostname(),
         })
+
+    @app.route('/dashboard')
+    def dashboard():
+        return render_template('dashboard.html')
 
     @app.route("/alert-status")
     def alert_status():
@@ -161,6 +224,26 @@ def create_app():
 
     @app.errorhandler(500)
     def internal_error(e):
+        # Record the 500 and send an immediate alert if alert manager is running.
+        try:
+            try:
+                metrics_store.record(500)
+            except Exception:
+                pass
+            mgr = getattr(app, "alert_manager", None)
+            if mgr is not None:
+                import traceback
+                tb = "".join(traceback.format_exception(type(e), e, getattr(e, "__traceback__", None)))
+                body = (
+                    "An unhandled exception occurred during request handling.\n\n"
+                    f"Path: {request.path}\nMethod: {request.method}\nError: {e}\n\nTraceback:\n{tb}"
+                )
+                try:
+                    mgr._notify("[ALERT] Unhandled Exception", body)
+                except Exception:
+                    logger.exception("failed_to_send_immediate_alert")
+        except Exception:
+            logger.exception("internal_error_handler_failed")
         return jsonify({"error": "internal server error"}), 500
 
     return app

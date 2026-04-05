@@ -1,0 +1,12 @@
+body { background: #071018; color: #e6eef8; }
+.container { max-width: 1200px; }
+.navbar { background: #05090f !important; }
+.card { margin-bottom: .6rem; background: #0b1220; border: 1px solid #12202b; color: #e6eef8; }
+.card-body { padding: .6rem; }
+.chart-container { height: 120px; overflow: hidden; }
+.chart-container canvas { width:100% !important; height:100% !important; }
+.logs { max-height: 180px; overflow-y: auto; background:#020417; color:#cfe8ff; padding:10px; border-radius:4px; }
+.card-title { font-weight:600; font-size:0.9rem; color:#cfe8ff; }
+#service-status.text-success { color: #28a745 !important; }
+#service-status.text-danger { color: #dc3545 !important; }
+.small.text-muted { color: #9fb0c8 !important; }
